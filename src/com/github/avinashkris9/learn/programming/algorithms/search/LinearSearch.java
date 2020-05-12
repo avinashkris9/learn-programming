@@ -1,4 +1,4 @@
-package io.learn.algorithms.search;
+package com.github.avinashkris9.learn.programming.algorithms.search;
 
 public class LinearSearch {
 

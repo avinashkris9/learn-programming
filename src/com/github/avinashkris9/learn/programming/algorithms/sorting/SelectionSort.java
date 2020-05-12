@@ -1,4 +1,4 @@
-package io.learn.algorithms.sorting;
+package com.github.avinashkris9.learn.programming.algorithms.sorting;
 
 public class SelectionSort {
 
