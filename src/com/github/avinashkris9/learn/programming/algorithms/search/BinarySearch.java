@@ -22,7 +22,7 @@ public class BinarySearch {
         int end = arr.length;
         int mid = end / 2;
 
-        while (start < end) {
+        while (start <= end) {
             System.out.println("Search =" + numberToSearch + " Start =" + start + " Middle =" + mid + " end= " + end);
             if (arr[mid] == numberToSearch) {
                 System.out.println(" Number " + numberToSearch + " found at position " + mid);

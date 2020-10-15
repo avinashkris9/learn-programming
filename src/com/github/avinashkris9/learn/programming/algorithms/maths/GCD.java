@@ -10,30 +10,22 @@ Now instead of subtraction, if we divide smaller number, the algorithm stops whe
  */
 public class GCD {
 
-
-    //logic is divide larger number with smaller number.
-    // repeat this
-    // until reminder is zero until divisor become zero,
-    // that gives GCD. Refer to Euclids theorem
-    // .
-    public  static int gcd(int a,int b)
-    {
-        if(a==0)
-        {
-            return  b;
-        }
-        return (gcd(b%a, a));
+  // logic is divide larger number with smaller number.
+  // repeat this
+  // until reminder is zero until divisor become zero,
+  // that gives GCD. Refer to Euclids theorem
+  // .
+  public static int gcd(int a, int b) {
+    if (a == 0) {
+      return b;
     }
-    public static void main(String[] args) {
+    return (gcd(b % a, a));
+  }
 
+  public static void main(String[] args) {
 
-        int x=31;
-        int y=2;
-        if(x>y)
-        {
-            System.out.println( gcd(x,y));
-        }
-        else
-            System.out.println( gcd(y,x));
-    }
+    int x = 38;
+    int y = 12;
+      System.out.println(gcd(x, y));
+  }
 }

@@ -14,26 +14,23 @@ reminder =0;
  */
 public class LCM {
 
-    public  static int hcf(int a ,int b)
-    {
-        while (a>0)
-        {
-            int r=b%a;
+  public static int hcf(int a, int b) {
+    while (a > 0) {
+      int r = b % a;
 
-            b=a;
-            a=r;
-        }
-        return b;
+      b = a;
+      a = r;
     }
+    return b;
+  }
 
-    public static int lcm(int a, int b)
-    {
+  public static int lcm(int a, int b) {
 
-        return  a*b /hcf(a,b);
-    }
-    public static void main(String[] args) {
+    return a * b / hcf(a, b);
+  }
 
-        System.out.println(lcm(9,30));
+  public static void main(String[] args) {
 
-    }
+    System.out.println(lcm(9, 30));
+  }
 }

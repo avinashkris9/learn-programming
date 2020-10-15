@@ -6,7 +6,7 @@ package com.github.avinashkris9.learn.programming.misc;
 //Find the largest palindrome made from the product of two 3-digit numbers.
 
 
-public class palindromeNumber {
+public class PalindromeNumber {
 
 	//function to find reverse of a number;
 	public static int reverse(int n)
