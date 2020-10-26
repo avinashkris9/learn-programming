@@ -1,8 +1,7 @@
-package com.github.avinashkris9.learn.programming.misc;
+package com.github.avinashkris9.learn.programming.java.concepts;
 
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -24,6 +23,8 @@ The main difference between them is that Comparable is directly implemented in t
 Consequently, if you have a single way to compare instances from a class, that is that you have a natural order for them, Comparable is the right approach.
 On the other hand, if you have multiple ways to compare instances from a class, Comparable is not enough.
 You should use Comparators instead (if it doesn't exist a natural order) or use both (if it exists a natural order and some other kinds of order).
+
+https://www.oracle.com/technical-resources/articles/java/architect-lambdas-part2.html
  */
 public class JavaComparision  {
 
@@ -34,13 +35,14 @@ public class JavaComparision  {
 
   List<Person> testUsers= Arrays.asList(new Person("Shaji",26), new Person("Chappan",29),new Person("Shameer",41), new Person("Xavier",12));
 
+    System.out.println(" Using Comparable");
     System.out.println(testUsers);
     Collections.sort(testUsers);
-    System.out.println(testUsers);
+    System.out.println("After sorting using age" + testUsers);
 
-    System.out.println(" Using Comparator");
+
     List<Person> userList= Arrays.asList(new Person("Shaji",26), new Person("Chappan",29),new Person("Shameer",41), new Person("Xavier",12));
-    System.out.println(userList);
+    System.out.println("Before Sorting" + userList);
     Collections.sort(userList,new PersonNameSorter());
     System.out.println(userList);
 
